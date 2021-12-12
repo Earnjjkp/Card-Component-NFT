@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+*{
+    max-width: 1440px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+body{
+    background: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+.card-main{
+    width: 350px;
+    height: 600px;
+    background: hsl(216, 50%, 16%);
+    margin: 85px 0;
+    border-radius: 15px;
+}
+.img-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.img-main img{
+    border-radius: 15px;
+    display: block;
+    
+}
+.img-main .overlay{
+    position: absolute;
+  height: 300px;
+  width: 300px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  background-color: hsl(178, 100%, 50%,50%);
+  border-radius: 15px;
+  
+}
+
+.img-main .overlay img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .img-main .overlay:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+.container{
+    width: 100%;
+    margin: 0 auto;
+    
+}
+.contant{
+   width: 300px;
+   margin: 0 25px;
+}
+.contant .container h1{
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+    
+    margin-top: 30px;
+}
+.contant .container h1:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.contant .container p{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 18px;
+    color:  hsl(215, 51%, 70%);
+    font-weight: normal;
+}
+.coin{
+    display: flex;
+    justify-content: start;
+    margin: 10px 25px;
+    padding: 0;
+    width: 100%;
+}
+.coin .ethcoin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.coin .ethcoin h3{
+    color: hsl(178, 100%, 50%);
+    padding: 0 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.coin .time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 90px;
+}
+.coin .time h3{
+    font-size: 18px;
+    padding: 8px;
+    color: hsl(215, 51%, 70%);
+    font-weight: normal;
+}
+
+hr{
+    border: 1px solid hsl(215, 32%, 27%);
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  text-align:center; 
+  margin: 0 auto;
+}
+footer{
+    width: 300px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-left: 25px;
+}
+footer img{
+    border: 1.5px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+footer p{
+    font-size: 14px;
+    margin-left:15px;
+    color: hsl(215, 51%, 70%);
+    font-weight: normal;
+}
+footer a{
+    margin-left: 5px;
+    text-decoration: none;
+    color: inherit;
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+    font-weight: normal;
+}
+footer a:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+@media (max-width : 375px) {
+   .container{
+       margin: 0 auto;
+   }
+    
+}
+::-webkit-scrollbar {
+    display: none;
+}
